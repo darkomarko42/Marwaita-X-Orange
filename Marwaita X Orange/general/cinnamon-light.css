@@ -66,7 +66,7 @@
 .sound-player StButton:small{padding: 0;}
 
 StScrollBar StButton,
-.applet-cornerbar-box{padding: 4px;}
+.applet-cornerbar-box{padding: 3px;}
 
 .menu-category-button,
 .menu-category-button-selected,
@@ -190,11 +190,6 @@ StButton.popup-menu-item,
 .menu StButton:hover,
 .menu StButton:hover.notification-applet-padding,
 StButton:checked.radiobutton,
-.sound-player StButton:small:hover,
-.sound-player-overlay StButton:hover,
-.calendar-change-month-back:hover,
-.calendar-change-month-forward:hover,
-.applet-box:hover,
 .grouped-window-list-thumbnail-menu .item-box:selected,
 .panelLeft:dnd,
 .panelCenter:dnd,
@@ -204,7 +199,7 @@ StButton:checked.radiobutton,
 #panel,
 .grouped-window-list-badge,
 .sound-player-overlay
-,
+{background-color: rgba(255,255,255, 0.9);}
 
 #notification,
 .menu #notification,
@@ -247,7 +242,7 @@ StButton:hover,
 #notification StButton.notification-icon-button,
 .popup-menu #notification StButton.notification-button,
 .popup-menu #notification StButton.notification-icon-button
-{ background-color: #fff7eb; /*use button color*/}
+{ background-color: #f0eeec; /*use button color*/}
 
 StButton:active,
 StButton:checked,
@@ -273,7 +268,7 @@ StButton:checked,
 #notification StButton.notification-icon-button:checked,
 .popup-menu #notification StButton.notification-button:checked,
 .popup-menu #notification StButton.notification-icon-button:checked
-{ background-color: #ece4d9; /*use button active color*/}
+{ background-color: #dfdcd9; /*use button active color*/}
 
 .popup-menu-item:active,
 .popup-submenu-menu-item:open,
@@ -285,7 +280,16 @@ StButton:checked,
 .menu StButton:active,
 .menu StButton:selected,
 .calendar-event-button:hover,
-.popup-sub-menu
+.popup-sub-menu,
+.applet-box:hover,
+.grouped-window-list-item-box:hover,
+.grouped-window-list-item-box:active:hover,
+.window-list-item-box:hover,
+.window-list-item-box:active:hover,
+.sound-player StButton:small:hover,
+.sound-player-overlay StButton:hover,
+.calendar-change-month-back:hover,
+.calendar-change-month-forward:hover
 { background-color: rgba(0,0,0, 0.1); box-shadow: none;}
 
 .applet-cornerbar,
@@ -295,75 +299,25 @@ StButton:checked,
 .grouped-window-list-item-box:focus,
 .grouped-window-list-item-box:active:focus,
 .calendar-event-button:active,
-.calendar-event-button:checked
-{ background-color: rgba(0,0,0, 0.15); box-shadow: none;}
-
-.panel-bottom .window-list-item-box:focus,
-.panel-bottom .window-list-item-box:focus:hover,
-.panel-bottom .window-list-item-box:active:focus,
-.panel-bottom .window-list-item-box:active:focus:hover,
-.panel-bottom .grouped-window-list-item-box:focus,
-.panel-bottom .grouped-window-list-item-box:focus:hover,
-.panel-bottom .grouped-window-list-item-box:active:focus,
-.panel-bottom .grouped-window-list-item-box:active:focus:hover
-{ box-shadow: inset 0 -3px #303030;}
-
-.panel-top .window-list-item-box:focus,
-.panel-top .window-list-item-box:focus:hover,
-.panel-top .window-list-item-box:active:focus,
-.panel-top .window-list-item-box:active:focus:hover,
-.panel-top .grouped-window-list-item-box:focus,
-.panel-top .grouped-window-list-item-box:focus:hover,
-.panel-top .grouped-window-list-item-box:active:focus,
-.panel-top .grouped-window-list-item-box:active:focus:hover
-{ box-shadow: inset 0 3px #303030;}
-
-.panel-right .window-list-item-box:focus,
-.panel-right .window-list-item-box:focus:hover,
-.panel-right .window-list-item-box:active:focus,
-.panel-right .window-list-item-box:active:focus:hover,
-.panel-right .grouped-window-list-item-box:focus,
-.panel-right .grouped-window-list-item-box:focus:hover,
-.panel-right .grouped-window-list-item-box:active:focus,
-.panel-right .grouped-window-list-item-box:active:focus:hover
-{ box-shadow: inset -3px 0 #303030;}
-
-.panel-left .window-list-item-box:focus,
-.panel-left .window-list-item-box:focus:hover,
-.panel-left .window-list-item-box:active:focus,
-.panel-left .window-list-item-box:active:focus:hover,
-.panel-left .grouped-window-list-item-box:focus,
-.panel-left .grouped-window-list-item-box:focus:hover,
-.panel-left .grouped-window-list-item-box:active:focus,
-.panel-left .grouped-window-list-item-box:active:focus:hover
-{ box-shadow: inset 3px 0 #303030;}
+.calendar-event-button:checked,
+.applet-box:active,
+.applet-box:checked
+{ background-color: rgba(0,0,0, 0.2); box-shadow: none;}
 
 .window-list-item-box,
 .grouped-window-list-item-box:active { background-color: rgba(0,0/**/,0, 0.01);}
 
 .panel-bottom .window-list-item-box:focus,
-.panel-bottom .window-list-item-box:hover,
-.panel-bottom .grouped-window-list-item-box:active,
-.panel-bottom .grouped-window-list-item-box:hover,
-.panel-bottom .grouped-window-list-item-box:active:hover{ box-shadow: inset 0 -3px #303030;}
+.panel-bottom .grouped-window-list-item-box:active{ box-shadow: inset 0 -3px #303030;}
 
 .panel-top .window-list-item-box:focus,
-.panel-top .window-list-item-box:hover,
-.panel-top .grouped-window-list-item-box:active,
-.panel-top .grouped-window-list-item-box:hover,
-.panel-top .grouped-window-list-item-box:active:hover{ box-shadow: inset 0 3px #303030;}
+.panel-top .grouped-window-list-item-box:active{ box-shadow: inset 0 3px #303030;}
 
 .panel-right .window-list-item-box:focus,
-.panel-right .window-list-item-box:hover,
-.panel-right .grouped-window-list-item-box:active,
-.panel-right .grouped-window-list-item-box:hover,
-.panel-right .grouped-window-list-item-box:active:hover{ box-shadow: inset -3px 0 #303030;}
+.panel-right .grouped-window-list-item-box:active{ box-shadow: inset -3px 0 #303030;}
 
 .panel-left .window-list-item-box:focus,
-.panel-left .window-list-item-box:hover,
-.panel-left .grouped-window-list-item-box:active,
-.panel-left .grouped-window-list-item-box:hover,
-.panel-left .grouped-window-list-item-box:active:hover{ box-shadow: inset 3px 0 #303030;}
+.panel-left .grouped-window-list-item-box:active{ box-shadow: inset 3px 0 #303030;}
 
 .progress{background-color: rgba(51,185,84,0.5);}
 
@@ -380,8 +334,13 @@ StButton:checked,
 .menu #notification
 {box-shadow: 0 0 0 1px rgba(0,0,0, 0.2);}
 
-.popup-menu-item:active
-{box-shadow: inset 0 0 0 1px rgba(0,0,0, 0.1);}
+.popup-menu-item:active,
+StButton:hover,
+#notification StButton.notification-button:hover,
+#notification StButton.notification-icon-button:hover,
+.popup-menu #notification StButton.notification-button:hover,
+.popup-menu #notification StButton.notification-icon-button:hover
+{box-shadow: inset 0 0 0 1px rgba(0,0,0, 0.15);}
 
 .expo-background{border: none;}
 
